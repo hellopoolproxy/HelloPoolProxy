@@ -19,7 +19,7 @@ Web界面操作，简单易用，一键安装，小白可以轻松上手。可�
 10. 采用Golang语言开发，网络性能优异。
 11. 全部web界面操作，简单易用，小白也能轻松驾驭，同时web界面还适配手机，手机上也能轻松操作。
 12. 单机4核，4g，稳定带5000+矿机。
-13. 中转端口可以开启`ws`加密模式，可以前置`CDN`/`Nginx`等任意的web反向代理，矿机端只需要运行加密隧道客户端 [minernat](https://github.com/demo/minernat) 即可连接`ws`中转端口，全程加密，防止被监控。
+13. 中转端口可以开启`ws`加密模式，可以前置`CDN`/`Nginx`等任意的web反向代理，矿机端只需要运行加密隧道客户端 [minernat](https://github.com/hellopoolproxy/minernat) 即可连接`ws`中转端口，全程加密，防止被监控。
 14. 中转端口可以开启`ssl/tls`加密模式，配置域名证书和密钥，全程加密，防止被监控。
 15. 支持ssl/tls加密协议和tcp协议。
 16. 程序支持注册为系统服务，开机自启动，管理端口可以通过配置文件自由修改。
@@ -43,18 +43,18 @@ Web界面操作，简单易用，一键安装，小白可以轻松上手。可�
 如果是小白，可以执行下面的一键安装脚本，就把"Hello Miner"安装为了系统服务。
 
 ```shell
-bash -c "$(curl -s -L https://github.com/demo/hellopoolproxy/raw/main/install.sh)" @ install
+bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/install.sh)" @ install
 ```
 
 具体程序的`启动`，`停止`，`重启`，`状态`命令如下：
 
-1. 程序启动：`systemctl start hellopoolproxy`
-2. 程序停止：`systemctl stop hellopoolproxy`
-3. 程序重启：`systemctl restart hellopoolproxy`
-4. 程序状态：`systemctl status hellopoolproxy`
-5. 启动日志：`/etc/hellopoolproxy/hellopoolproxy logs`
-6. 程序卸载：`/etc/hellopoolproxy/hellopoolproxy uninstall`
-7. 程序配置文件路径：`/etc/hellopoolproxy/conf`，可以通过修改`/etc/hellopoolproxy/conf/app.toml`里面的配置修改程序web管理端口。
+1. 程序启动：`systemctl start hellominer`
+2. 程序停止：`systemctl stop hellominer`
+3. 程序重启：`systemctl restart hellominer`
+4. 程序状态：`systemctl status hellominer`
+5. 启动日志：`/etc/hellominer/hellominer logs`
+6. 程序卸载：`/etc/hellominer/hellominer uninstall`
+7. 程序配置文件路径：`/etc/hellominer/conf`，可以通过修改`/etc/hellominer/conf/app.toml`里面的配置修改程序web管理端口。
 8. 默认管理端口是`51301`，假设你的vps的IP是，`192.168.1.1`，那么访问：`http://192.168.1.1:51301` 就可以进入管理登录页面，默认密码是：`123456`
    。进入后台后，点击右上角头像可以修改密码。
 
@@ -63,7 +63,7 @@ bash -c "$(curl -s -L https://github.com/demo/hellopoolproxy/raw/main/install.sh
 更新程序只需要执行：
 
 `
-bash -c "$(curl -s -L https://github.com/demo/hellopoolproxy/raw/main/install.sh)" @ update
+bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/install.sh)" @ update
 `
 
 ## 使用SSL/TLS加密
@@ -75,9 +75,9 @@ bash -c "$(curl -s -L https://github.com/demo/hellopoolproxy/raw/main/install.sh
 ### 默认证书
 
 1. 准备证书文件：  
-程序默认自带了自签名证书，位于`/etc/hellopoolproxy/conf`目录下面，分别是证书文件`server.crt`和私钥`server.key`,
+程序默认自带了自签名证书，位于`/etc/hellominer/conf`目录下面，分别是证书文件`server.crt`和私钥`server.key`,
 如果需要用自己的正规证书，只需要把你的证书改名成`server.crt`，私钥文件改成`server.key`。
-覆盖`/etc/hellopoolproxy/conf`目录下面的同名文件即可。
+覆盖`/etc/hellominer/conf`目录下面的同名文件即可。
 
 2. 端口启用SSL/TLS加密  
    在添加或者修改矿池页面，本地协议选择`TLS`，`默认证书`即可，然后在首页重载服务，矿机就可以使用SSL加密方式连接此端口了。

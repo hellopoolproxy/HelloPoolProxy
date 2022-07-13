@@ -1,9 +1,9 @@
 #!/bin/bash
-PATH_TO_DIR="/etc/hellopoolproxy/"
-BIN_NAME="hellopoolproxy"
+PATH_TO_DIR="/etc/hellominer/"
+BIN_NAME="hellominer"
 PATH_TO_BIN=${PATH_TO_DIR}${BIN_NAME}
 SERVICE_NAME=${BIN_NAME}
-DOWNLOAD_ADDR="https://github.com/demo/hellopoolproxy/raw/main/hellopoolproxy"
+DOWNLOAD_ADDR="https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/hellominer"
 case $1 in
 install)
 	if [ -f ${PATH_TO_BIN} ]; then
