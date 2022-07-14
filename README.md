@@ -57,6 +57,40 @@ bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/
 7. 程序配置文件路径：`/etc/hellominer/conf`，可以通过修改`/etc/hellominer/conf/app.toml`里面的配置修改程序web管理端口。
 8. 默认管理端口是`51301`，假设你的vps的IP是，`192.168.1.1`，那么访问：`http://192.168.1.1:51301` 就可以进入管理登录页面，默认密码是：`123456`
    。进入后台后，点击右上角头像可以修改密码。
+   
+### 方式二：手动安装
+
+1.创建安装目录
+mkdir /etc/hellominer，
+2. 进入目录
+cd /etc/hello/
+3. ubuntu下载 
+wget https://raw.githubusercontent.com/hellopoolproxy/HelloPoolProxy/main/hellominer
+4. 赋予权限
+chmod 777 hellominer 
+5.初始化
+./hellominer init
+6. 启动 
+./hellominer
+
+建议后台守护方式运行
+1.停止
+CTRL c
+2.执行
+cd /etc/hellominer && ./hellominer --daemon --forever --flog null
+3.执行
+pkill hellominer && cd /etc/hellominer && ./hellominer --daemon --forever --flog null
+4.查看是否启动并正常监听
+netstat -antpl | grep hellominer
+5.正常显示
+tcp6       0      0 :::51301                :::*                    LISTEN      139288/./hellominer 
+tcp6       0      0 172.16.158.188:51301    112.113.149.233:6261    ESTABLISHED 139288/./hellominer 
+
+配置文件目录位于：
+/etc/hellominer/conf,可以通过修改/etc/hellominer/conf/app.toml里面的配置，改变程序web管理端口。
+默认管理端口是51301，假设你的vps的IP是，192.168.1.1，那么访问：http://192.168.1.1:51301 就可以进入管理登录页面，默认密码是：123456 。进入后台后，点击右上角头像可以修改密码。
+   
+   
 
 #### 更新程序
 
