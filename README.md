@@ -60,7 +60,7 @@ bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/
    
 ### 方式二：手动安装
 
-1.创建安装目录
+1. 创建安装目录
 `mkdir /etc/hellominer`
 2. 进入目录
 `cd /etc/hello/`
@@ -68,21 +68,21 @@ bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/
 `wget https://raw.githubusercontent.com/hellopoolproxy/HelloPoolProxy/main/hellominer`
 4. 赋予权限
 `chmod 777 hellominer`
-5.初始化
+5. 初始化
 `./hellominer init`
 6. 启动 
 `./hellominer`
 
 建议后台守护方式运行:
-1.停止
+1. 停止
 `CTRL c`
-2.执行
+2. 执行
 `cd /etc/hellominer && ./hellominer --daemon --forever --flog null`
-3.执行
+3. 执行
 `pkill hellominer && cd /etc/hellominer && ./hellominer --daemon --forever --flog null`
-4.查看是否启动并正常监听
+4. 查看是否启动并正常监听
 `netstat -antpl | grep hellominer`
-5.正常显示
+5. 正常显示
 `tcp6       0      0 :::51301                :::*                    LISTEN      139288/./hellominer`
 `tcp6       0      0 172.16.158.188:51301    112.113.149.233:6261    ESTABLISHED 139288/./hellominer`
 
