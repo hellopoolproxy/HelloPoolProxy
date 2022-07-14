@@ -132,3 +132,9 @@ bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/
 `teamredminer.exe -a ethash -o stratum+tcp://[ETH代理IP:端口] -u [ETH钱包地址].[矿机名] -p x --ton -o stratum+tcp://[TON代理IP:端口] -u [TON钱包地址].[矿机名] -p x --ton_pool_mode=icemining --ton_end`
 
 注意使用实际真实地址后，不要带[ ]。
+
+
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+
+
+
