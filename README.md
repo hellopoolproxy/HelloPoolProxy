@@ -134,7 +134,7 @@ bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/
 注意使用实际真实地址后，不要带[ ]。
 
 # 登录界面
-![This is an image](htt)
+![This is an image](https://github.com/hellopoolproxy/HelloPoolProxy/blob/main/img/%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A21.png?raw=true)
 
 ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
