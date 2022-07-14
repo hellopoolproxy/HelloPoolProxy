@@ -61,7 +61,7 @@ bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/
 ### 方式二：手动安装
 
 1.创建安装目录
-mkdir /etc/hellominer，
+`mkdir /etc/hellominer`
 2. 进入目录
 cd /etc/hello/
 3. ubuntu下载 
