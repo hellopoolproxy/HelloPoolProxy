@@ -83,6 +83,7 @@ bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/
 4. 查看是否启动并正常监听
 `netstat -antpl | grep hellominer`
 5. 正常显示 
+ 
  `tcp6       0      0 :::51301                :::*                    LISTEN      139288/./hellominer`
  `tcp6       0      0 172.16.158.188:51301    112.113.149.233:6261    ESTABLISHED 139288/./hellominer`
 
