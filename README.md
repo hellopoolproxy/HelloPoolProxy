@@ -1,4 +1,4 @@
-# HelloPoolProxy
+# HelloPoolProxy hellominer
 
 专业矿池代理，支持 ETH、ETC、BTC、TON、ERG、RVN、LTC、XMR、CFX、KDA，可免费定制软件内置抽水账号，打造专属自己的版本，有需要进群找群主。
 Web界面操作，简单易用，一键安装，小白可以轻松上手。可以自定义抽水，独创PID抽水算法，稳定精准，秒杀一切市面上随机抽水算法。完美适配各种专业机芯片机。
