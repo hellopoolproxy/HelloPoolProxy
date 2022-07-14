@@ -85,7 +85,6 @@ bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/
 5. 正常显示
  
  `tcp6       0      0 :::51301                :::*                    LISTEN      139288/./hellominer`
- 
  `tcp6       0      0 172.16.158.188:51301    112.113.149.233:6261    ESTABLISHED 139288/./hellominer`
 
 配置文件目录位于：
