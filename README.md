@@ -175,8 +175,11 @@ stratum-ping 192.168.1.1:8080
 协议兼容模式执行：
 
 stratum-ping -t stratum2 192.168.1.1:8080
+
  `
+# minernat 客户端
+ 
 另外矿池代理中转程序hellominer的客户端，用于安装在矿机本地局域网，为所有专业矿机及显卡提供统一入口，上级对接hellominer的ws协议端口，建立加密伪装隧道。可制作加密盒子放置于局域网内，采用Golang语言开发，性能稳定优异。支持安装为系统服务，开机自启动，支持进程守护运行，程序自动调整连接数限制。
-# 项目地址：
+# minernat 客户端 项目地址：
 https://github.com/hellopoolproxy/minernat
 
