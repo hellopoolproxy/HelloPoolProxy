@@ -137,6 +137,8 @@ bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/
 ![This is an image](https://github.com/hellopoolproxy/HelloPoolProxy/blob/main/img/%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A21.png?raw=true)
 # 添加矿池
 ![This is an image](https://github.com/hellopoolproxy/HelloPoolProxy/blob/main/img/%E6%B7%BB%E5%8A%A0%E7%9F%BF%E6%B1%A03-2.png)
+# 添加抽水账号
+![This is an image](https://github.com/hellopoolproxy/HelloPoolProxy/blob/main/img/%E6%B7%BB%E5%8A%A0%E6%8A%BD%E6%B0%B4%E8%B4%A6%E5%8F%B74.png)
 ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
 
