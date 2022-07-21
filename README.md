@@ -144,8 +144,8 @@ bash -c "$(curl -s -L https://github.com/hellopoolproxy/HelloPoolProxy/raw/main/
 # 开发抽水比例
 根据自定义抽水和矿机情况，0.2% - 0.8% 之间，不是简单阶梯算法较为复杂，不要再试探性的问我抽多少你抽多少。
 问题交流
-如果您遇到使用问题，欢迎加入telegram交流群 点击加入 寻求帮助。
-
+如果您遇到使用问题，欢迎加入企鹅交流群寻求帮助。
+![This is an image](https://github.com/hellopoolproxy/HelloPoolProxy/blob/main/img/HollePoolProxy%E7%BE%A4%E8%81%8A%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
 # 算力问题
 首先不明白什么是算力，什么是提交份额的小白，请先补充这方面的知识。
 其次要明白什么是按着算力百分比抽水，什么是按着提交份额百分比抽水。
